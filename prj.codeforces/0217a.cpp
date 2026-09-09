@@ -1,0 +1,19 @@
+﻿#include <iostream>
+using namespace std;
+
+int main() {
+	int y;
+	cin >> y; 
+	for (int a = y + 1; a < 9999; a += 1) {
+		const int d1 = a / 1000;
+		const int d2 = a / 100 % 10;
+		const int d3 = a / 10 % 10;
+		const int d4 = a % 10;
+
+		bool is_beaty = (d1 != d2) && (d1 != d3) && (d1 != d4) && (d2 != d3) && (d2 != d4) && (d3 != d4);
+		if (is_beaty) {
+			cout << b;
+			break;
+		}
+	}
+}
